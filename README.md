@@ -1,163 +1,157 @@
-End-to-End Customer Intelligence & Analytics Platform
-Overview
+**End-to-End Customer Intelligence & Analytics Platform**
+**📌 Project Description**
 
-This project presents an end-to-end Customer Intelligence & Analytics Platform designed to analyze customer behavior, engagement, churn risk, and revenue contribution using structured transactional and behavioral data. The solution combines Python-based analytics with Power BI dashboards to deliver actionable insights that support data-driven decision-making across marketing, retention, and revenue optimization teams.
+An end-to-end Customer Intelligence & Analytics Platform built using Python, SQL, and Power BI to analyze customer engagement, churn risk, and revenue contribution. The platform transforms raw customer and transaction data into actionable insights that support executive decision-making, retention prioritization, and revenue protection strategies.
 
-The platform focuses on identifying high-value customers, detecting churn risk early, and prioritizing retention efforts based on measurable business impact.
+**🎯 Business Objective**
 
-Business Problem
+Organizations often lack clarity on:
 
-Organizations often struggle to balance revenue growth with customer retention due to limited visibility into customer engagement patterns and churn risk. High-value customers may silently disengage, while low-impact customers consume disproportionate retention resources.
+1.Which customer segments drive the most revenue
 
-This project addresses the following challenges:
+2.Which customers are at risk of churn
 
-Identifying customer segments that contribute the most revenue
+3.Where retention efforts should be prioritized for maximum ROI
 
-Measuring churn risk across different customer groups
+This project addresses these challenges by combining customer segmentation, engagement analysis, and churn risk assessment into a unified analytics workflow.
 
-Understanding engagement trends over time
+**🗂️ Data Overview**
 
-Prioritizing retention efforts where ROI is highest
+The analysis is based on structured customer and transaction datasets, including:
 
-Data Description
+A) Customer Features
 
-The project uses structured datasets representing customer behavior and transactions:
+1) Engagement metrics
 
-Customer Features: Customer-level attributes including RFM scores, engagement indicators, and cluster labels
+2) Recency indicators
 
-Transaction Data: Order-level information including revenue, transaction dates, and order counts
+3) Churn risk flags
 
-Cohort & Retention Tables: Data supporting engagement and retention analysis over time
+4) Customer segment labels
 
-Key derived metrics include:
+B) Transaction Data
 
-Total Customers
+1) Order counts
 
-Total Net Revenue
+2) Revenue values
 
-Total Orders
+3) Transaction timestamps
 
-Average Order Value (AOV)
+C) Derived Analytics Tables
 
-At-Risk Rate
+1) Monthly engagement summaries
 
-Active Customers (30-day window)
+2) Customer-level risk indicators
 
-Analytics & Modeling Approach
+3) Segment-level aggregations
 
-Customer Segmentation
+**🧠 Analytics Approach**
+**1. Customer Segmentation**
 
-Customers are grouped into three segments:
+Customers are grouped into:
 
-High-Value Active
+1) High-Value Active – highly engaged, strong revenue contribution
 
-Discount-Driven
+2) Discount-Driven – revenue-generating but churn-sensitive
 
-At-Risk / Dormant
+3) At-Risk / Dormant – low engagement, high churn risk
 
-Segmentation is based on behavioral and transactional signals.
+**2. Engagement Analysis**
 
-Churn Risk Identification
+1) Monthly active customers tracked using a rolling 30-day window
 
-Customers are labeled as at-risk using inactivity and recency-based indicators.
+2) Segment-level engagement trends analyzed over time
 
-Churn risk is aggregated at the segment and customer level.
+3) Order volume compared across customer segments
 
-Engagement Analysis
+**3. Churn Risk & Revenue Analysis**
 
-Monthly active customer trends are analyzed using rolling 30-day activity windows.
+1) At-risk customers identified using recency and inactivity indicators
 
-Segment-level engagement trends are compared across time.
+2) Revenue contribution evaluated at segment and customer levels
 
-Revenue Impact Analysis
+3) Risk vs. revenue trade-offs visualized to support prioritization
 
-Revenue contribution is evaluated by customer segment.
+**📊 Power BI Dashboard Structure**
+**🔹 Page 1: Executive Overview**
 
-Revenue vs. churn risk trade-offs are visualized to support prioritization decisions.
+**Purpose**: High-level snapshot of customer health and revenue performance
+Includes:
 
-Power BI Dashboard
+1) Key KPIs (Customers, Revenue, Orders, AOV, At-Risk Rate)
 
-The Power BI dashboard is structured into three analytical views, each answering a specific business question.
+2) Customer distribution by segment
 
-1. Executive Overview
+3) Revenue contribution by segment
 
-Provides a high-level snapshot of the business:
+4) Segment-level churn risk summary
 
-Customer distribution by segment
+**🔹 Page 2: Engagement & Activity**
 
-Revenue contribution by segment
+**Purpose**: Understand how customers interact with the platform over time
+Includes:
 
-Overall churn risk and engagement health
+1) Monthly activity consistency matrix
 
-Key KPIs such as Total Revenue, AOV, and At-Risk Rate
+2) Active Customers (30d) trend by segment
 
-Purpose: Enable executives to quickly understand where revenue and risk are concentrated.
+3) Total orders by customer segment
 
-2. Engagement & Activity
+**🔹 Page 3: Risk & Revenue Prioritization**
 
-Focuses on customer activity patterns:
+**Purpose**: Enable targeted retention and action
+Includes:
 
-Monthly active customer trends by segment
+1) Revenue vs. churn risk scatter plot by segment
 
-Comparison of engagement consistency across customer groups
+2) Customer-level action table identifying high-value, at-risk customers
 
-Total order volume by segment
+**🔑 Key Insights**
 
-Purpose: Identify which segments are actively engaging with the platform and driving usage.
+1) Revenue is concentrated among High-Value Active customers with low churn risk
 
-3. Risk & Revenue Prioritization
+2) Discount-Driven customers represent the largest revenue protection opportunity
 
-Analyzes the trade-off between churn risk and revenue:
+3) Churn risk is unevenly distributed across segments
 
-Scatter plot visualizing revenue vs. churn risk by segment
+4) At-Risk/Dormant customers contribute minimal revenue and offer limited retention ROI
 
-Customer-level table highlighting high-risk, high-revenue customers
-
-Purpose: Support targeted retention strategies by identifying customers and segments that require immediate attention.
-
-Key Insights
-
-High-Value Active customers generate the majority of revenue while exhibiting low churn risk.
-
-Discount-Driven customers contribute meaningful revenue but show elevated churn risk, making them prime candidates for retention efforts.
-
-At-Risk/Dormant customers contribute minimal revenue and offer limited ROI for aggressive retention investment.
-
-Churn risk is unevenly distributed, with a small subset of customers representing disproportionate revenue risk.
-
-Business Impact
+**💼 Business Impact**
 
 This platform enables:
 
-Smarter allocation of retention budgets
+1) Smarter retention budget allocation
 
-Proactive churn prevention for high-impact customers
+2) Early identification of revenue risk
 
-Improved understanding of engagement behavior
+3) Targeted customer-level interventions
 
-Data-backed prioritization of customer segments
+4) Clear linkage between engagement behavior and financial outcomes
 
-Tools & Technologies
+**🛠️ Tools & Technologies**
 
-Python (Pandas, NumPy) – data preparation and analysis
+**Python (Pandas, NumPy)** – data processing and feature engineering
 
-Jupyter Notebook – exploratory analysis and metric development
+**SQL** – data querying and aggregation
 
-Power BI – interactive dashboards and executive reporting
+**Jupyter Notebook** – analytics workflow
 
-GitHub – version control and project documentation
-Future Enhancements
+**Power BI** – interactive dashboards and executive reporting
 
-Predictive churn modeling using machine learning
+**GitHub** – version control and documentation
 
-Customer lifetime value (CLV) estimation
+**🚀 Future Enhancements**
 
-Automated alerting for high-risk, high-value customers
+1) Predictive churn modeling
 
-Integration with real-time data sources
+2) Customer lifetime value (CLV) estimation
 
-Author
+3) Automated alerts for high-risk customers
 
-Spandana Damannagari
+4) Integration with CRM or real-time data pipelines
+
+**👤 Author**
+
+**Spandana Damannagari**
 Master’s Student – Data Science
-Project: Customer Intelligence & Analytics Platform
+Project: End-to-End Customer Intelligence & Analytics Platform
